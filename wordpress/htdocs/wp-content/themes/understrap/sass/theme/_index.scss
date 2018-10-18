@@ -1,0 +1,348 @@
+.application {
+    margin-top: 1rem;
+
+    .btn-submit {
+        transition: all 0.6s ease;
+    
+        &:focus {
+            outline: none;
+        }
+
+        i.fa-check{
+            color:$white;
+            padding-top:3px;
+        }
+    }
+    
+    .btn-submitted {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 75px;
+        margin-right: 75px;
+        color: $white;
+        font-size: 9px;
+        overflow: hidden;
+        position: relative;
+        background-color: $primary;
+    
+     
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: darken($primary, 7%);
+            height: 100%;
+            width: 0%;
+            //animation: expand100 2s normal backwards;
+        }
+    }
+    
+    @keyframes expand100 {
+        0% {
+            width: 0%;
+        }
+    
+        100% {
+            width: 100%;
+        }
+    }
+
+    .application-header-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .btn-green {
+        margin: 1rem 1rem 0 1rem;
+        
+    }
+
+    .btn-green:focus{
+        outline:none;
+
+    }
+
+    .btn-outline {
+        width: 100%;
+        font-size: 1.25rem;
+        color: $primary;
+
+    }
+
+    .form-row {
+        padding-top: .75rem;
+    }
+
+    
+
+    // @media (max-width:1600px) {
+    //     .btn-outline {
+    //         font-size: 1rem;
+    //     }
+
+    // }
+    @include media-breakpoint-up(sm) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .resume-submission-row div {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        a.btn-outline {
+            padding: .25rem .5rem;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .resume-submission-row div {
+            padding-right: .25rem;
+            padding-left: .25rem;
+        }
+    }
+
+    @include media-breakpoint-up(xl){
+        .resume-submission-row div {
+            padding-right: .5rem;
+            padding-left: .5rem;
+        }
+    }
+    
+    @media(max-width:350px) {
+        margin-top: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 2rem;
+
+        .btn-outline {
+            margin-bottom: .5rem;
+        }
+
+        .btn-green {
+            width: 100%;
+        }
+    }
+}
+
+.opportunities {
+    padding: 9rem 0 4.5rem;
+    background-position: top center;
+    background-repeat: repeat-y;
+    background-size: cover;
+
+
+    .opportunities-header {
+        margin-bottom: 4rem;
+    }
+
+    .job-listing {
+
+        padding: 0 1rem;
+
+
+        h4 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $grey;
+            //font-family: "Museo Sans -300";
+            font-size: 1rem;
+            line-height: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 1px solid $light-grey
+        }
+
+        @include media-breakpoint-down(lg) {
+            .btn-outline {
+                margin: 1rem 1rem 1rem;
+
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .btn-outline {
+                width: 100%;
+                margin-top: 1rem;
+                padding: .5rem .5rem;
+            }
+        }
+
+        @include media-breakpoint-down(xs) {
+
+            .job-detail p {
+
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+
+            }
+        }
+    }
+
+
+
+
+}
+
+.testimonials-section {
+    padding-top: 4.5rem;
+    color: $white;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    background-repeat: repeat-y;
+    background-size: cover;
+    word-wrap:normal;
+
+    h2 {
+        text-shadow: -8px 0 20px #000, 8px 0 20px #000, 0 8px 20px #000, 0 -8px 20px #000;
+        //font-family: "Museo Sans -900";
+        padding-bottom: 2.5rem;
+    }
+
+    .card {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+
+        .card-body {
+            padding-top: 0;
+            padding-left: 0;
+            margin-left: 20px;
+            padding-right: 0;
+            background-color: $primary;
+            margin-right: 20px;
+
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .card-body {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .testimonial {
+        margin-bottom: 2rem;
+    }
+
+    img.background-slice {
+        padding: 0 1.25rem;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+
+    .testimonial-content {
+        padding: 1.5rem .5rem 2rem .5rem;
+        background-color: $primary;
+
+        //height:100%;
+    }
+
+    .testimonial-full-name {
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+    }
+
+    .testimonial-feedback {
+        //font-family: "Museo Sans -300";
+        font-size: 2rem;
+        font-weight: 400;
+        padding-bottom: 1.5rem;
+        line-height: 3rem;
+        word-wrap:normal;
+    }
+
+    .testimonial-cite {
+        word-wrap:normal;
+        text-transform: uppercase;
+        color: $tertiary;
+        //font-family: "Museo Sans -900";
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 0 1rem;
+        line-height: 1.75rem;
+    }
+
+    .testimonial-img {
+        background-color: $white;
+
+        .employee-image {
+            height: 12rem;
+        }
+
+        // img{
+        //     position:absolute
+        // }
+    }
+
+
+
+    .employee-image {
+        position: relative;
+        z-index: 4;
+    }
+
+    @include media-breakpoint-down(md) {
+        .testimonial-feedback{
+            font-size:1.5rem;
+            line-height: 2.25rem;
+        }
+        .testimonial-cite{
+            font-size:1rem;
+            line-height:1.5rem;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .testimonial-feedback{
+            font-size:1.5rem;
+            line-height: 2.25rem;
+        }
+        .testimonial-cite{
+            font: size 1.25rem;
+            line-height:1.75rem;
+        }
+    }
+
+}
+
+.divisions-section {
+    padding: 1rem 0;
+    background-color: $primary;
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .division p {
+        color: $white;
+        line-height: 1.5rem;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        margin-top: 1rem;
+
+    }
+
+    .division {
+        margin-bottom: 2rem;
+    }
+
+}

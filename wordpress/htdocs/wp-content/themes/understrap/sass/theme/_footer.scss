@@ -1,0 +1,23 @@
+.footer {
+
+        background-color: $grey;
+        color: $white;
+    
+
+    .site-info {
+        padding: 1rem 0 .5rem;
+                    
+        
+    }
+
+    @include media-breakpoint-down(sm){
+        .mission-buttons{
+            padding-top:.5rem;
+        }
+
+        .site-info{
+            padding-bottom: 1rem;
+        }
+        
+    }
+}

@@ -1,0 +1,219 @@
+
+
+body,
+h1,
+h2,
+h4,
+p,
+div {
+    font-family: museo-sans;
+}
+
+h1,
+h2 {
+    color: $secondary;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+h4 {
+    color: $primary;
+    //font-family: "Museo Sans -300";
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+
+label,
+.btn-green {
+    // font-family: "Museo Sans -900";
+    font-weight: 400;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+input.form-control,
+p {
+    color: $grey;
+    font-size: 2rem;
+
+    //font-family: "Museo Sans -300";
+}
+
+label {
+    color: $primary;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+input.form-control {
+    line-height: 2rem;
+    font-size: 1.75rem;
+    border: 2px solid #cccccc;
+}
+
+input.form-control,
+input.form-control:active,
+input.form-control:focus {
+
+    box-shadow: 0 0 20px rgba(77, 78, 83, 0.25);
+    border-radius: 5px;
+}
+
+input.form-control:active,
+input.form-control:focus {
+    border: 2px solid $primary;
+
+    box-shadow: 0 0 20px rgba(77, 78, 83, 0.25);
+    border-radius: 5px;
+}
+
+a {
+    color: $primary;
+    //font-family:"Museo Sans -700";
+}
+
+.fa {
+    color: $primary;
+}
+
+.dark {
+    background-color: $primary;
+    color: $white;
+
+    h2 {
+        color: $white;
+
+    }
+
+    p {
+        color: $tertiary
+    }
+}
+
+.logo-link {
+    cursor: pointer;
+}
+
+.wrapper {
+    padding-top: 2rem;
+    padding-bottom: 0;
+}
+
+.btn-outline,
+a.btn.btn-outline {
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid $primary;
+    background-color: transparent;
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: .25rem .75rem;
+    margin-right: 1rem;
+
+    //font-family: "Museo Sans -700";
+
+    @include media-breakpoint-down(sm) {
+        border-radius: 38px;
+        padding: .5rem 3.5rem;
+    }
+}
+
+div.btn-outline {
+    font-size: .9rem;
+}
+
+a.btn.btn-outline {
+    font-size: 1.25rem;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+a.btn.btn-outline:hover,
+a.btn.btn-outline:active {
+    background-color: $primary;
+    color: $white;
+}
+
+.btn-green {
+    border-radius: 38px;
+    background-color: $green;
+    text-transform: uppercase;
+    padding: .75rem 4.5rem;
+    color: $white;
+    font-size: 1.25rem;
+    border: none;
+}
+
+.btn-white {
+
+    border-radius: 38px;
+    background-color: $white;
+    text-transform: uppercase;
+    padding: .5rem 3.5rem;
+    color: $primary;
+
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+    background-color: $primary;
+    color: $white;
+}
+
+
+
+.bg-dark {
+    background-color: $primary !important;
+}
+
+
+.hfeed.home.blog {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+@include media-breakpoint-down(sm) {
+    .btn-green {
+        padding: .75rem 2.5rem;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.75rem;
+    }
+
+    input.form-control {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    .btn-outline {
+        font-size: 1.25rem;
+    }
+
+
+
+
+
+
+
+}

@@ -1,0 +1,198 @@
+.fa{
+    font-size:2rem;
+}
+
+.header.container-fluid{
+    margin-top:-30px;
+    transition: all 0.4s ease;
+}
+
+.fa.fa-close{
+    color:$white;
+
+}
+
+.overlay-menu-full.collapse.show~.header-container .navmenu-toggler-open,
+.overlay-menu-full.collapse.show~.header-container .logo{
+    display:none;
+
+}
+
+.overlay-menu-full.collapse.show~.body-content-wrapper{
+    overflow:hidden;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $transparent-primary;
+    z-index: 9;
+}
+
+.overlay nav {
+    height:100%;
+    text-align: center;
+    position: relative;
+    overflow:scroll;
+    // top: 50%;
+    // height: 60%;
+    font-size: 1.75rem;
+    // -webkit-transform: translateY(-50%);
+    // transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.overlay ul li {
+    display: block;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.overlay ul li a {
+    font-weight: 700;
+    display: block;
+    color: $white;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+    color: #849368;
+}
+
+
+.overlay-menu-full {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.collapse.show.overlay-menu-full {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.overlay-menu-full nav {
+    -moz-perspective: 300px;
+}
+
+.overlay-menu-full nav ul {
+    opacity: 0.4;
+    -webkit-transform: translateY(-25%) rotateX(35deg);
+    transform: translateY(-25%) rotateX(35deg);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.collapse.show.overlay-menu-full nav ul {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+
+
+
+nav {
+    .row {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+}
+
+.nav-menu-header{
+    padding-top:1rem;
+}
+
+.header {
+    padding-bottom: 4rem;
+
+    
+
+    h1 {
+        //font-family: "Museo Sans -900";
+        // text-shadow: 0 0 25px rgba(0, 101, 162, 0.75);
+        text-shadow: -5px -5px 25px $primary, 5px 5px 25px $primary;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size:2.5rem;
+    }
+
+    p {
+        text-shadow: -5px -5px 25px $primary, 5px 5px 25px $primary;
+        color: $white;
+        font-weight: 400;
+    }
+
+    .menu-row {
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        padding-left: 0;
+
+        img {
+            position: relative;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .content-row {
+            margin-top: 3rem;
+        }
+    }
+    
+
+}
+
+
+.header-background-image {
+
+    overflow: hidden;
+    position: absolute !important;
+    object-fit: cover;
+    object-position: bottom right;
+
+    width: 100%;
+
+   }
+
+.header-bg {
+
+
+
+    @include media-breakpoint-down(md) {
+        display: none;
+        max-width: none;
+        overflow: hidden;
+       
+        .content-row {
+            margin-top: 3rem;
+        }
+    }
+}
+
+.header-container {
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease;
+    }
